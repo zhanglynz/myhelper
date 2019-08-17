@@ -1,0 +1,16 @@
+Package: myhelper
+Type: Package
+Title: My HelpeR 
+Version: 0.1.0
+Author: Lingyun (Larry) Zhang
+Maintainer: Lingyun (Larry) Zhang <lyzhang10@gmail.com>
+Description: It contains handy tools for doing official statistics
+Imports:
+    magrittr,
+    dplyr, 
+    tidyr,
+    purrr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
