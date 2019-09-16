@@ -1,18 +1,22 @@
 #' Controlled rounding off numbers
 #'
 #' Return controlled rounding off numbers
+#' @param n the total
 #' @param a_vector a vector of non-negative numbers
 #' @keywords rounding off control
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples
 #' x <- rnorm(10, mean = 10, sd = 1)
-#' y <- controlled_rounding_off(x)
+#' y <- controlled_rounding_off(a_vector = x)
 #' (c(sum(x), sum(y)))
 #' (z <- cbind(x, y))
 
-controlled_rounding_off <- function(a_vector)
-{total <- round(sum(a_vector), 0)
+controlled_rounding_off <- function(n = NULL, a_vector)
+{if(is.null(n)) {
+  total <- round(sum(a_vector), 0) } else {
+  total <- n }
+
  a_df <-
    data.frame(x = a_vector) %>%
    dplyr::mutate(ID = row_number()) %>%
