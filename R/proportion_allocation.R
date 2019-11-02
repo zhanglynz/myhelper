@@ -13,8 +13,9 @@
 #'
 proportional_allocation <- function(n, a_vec)
 {prop <- a_vec / sum(a_vec)
- allocation <- n * prop
- the_result <- controlled_rounding_off(allocation)
+ allocation <- pmax(n * prop, 1) # should be at least 1
+ the_result <- controlled_rounding_off(a_vector = allocation)
+ if(sum(the_result) != n) stop("Something might be wrong!")
  return(the_result)
 }
 
