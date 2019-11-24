@@ -2,6 +2,7 @@
 
 export(DAGJK_replicate_wgts)
 export(controlled_rounding_off)
+export(get_non_unique_rows)
 export(jk_variance_4_cat)
 export(jk_variance_4_continuous)
 export(proportional_allocation)
