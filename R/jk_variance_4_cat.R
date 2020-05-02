@@ -37,8 +37,8 @@ jk_variance_4_cat <- function(df, count = TRUE)
 
  temp <-
    the_summary_df %>%
-   nest(-a_vari, -wgt_total) %>%
-   mutate(jk_variance = map2_dbl(wgt_total, data, function(x, y) co * sum((y - x) ^ 2))) %>%
+   nest(new_col = -c(a_vari, wgt_total)) %>%
+   mutate(jk_variance = map2_dbl(wgt_total, new_col, function(x, y) co * sum((y - x) ^ 2))) %>%
    ungroup() %>%
    rename(!!rlang::sym(old_names[1]) := a_vari) %>%
    rename(est_count = wgt_total) %>%
@@ -55,8 +55,8 @@ jk_variance_4_cat <- function(df, count = TRUE)
 
  temp_a <-
    the_summary_df_a %>%
-   nest(-a_vari, -wgt_total) %>%
-   mutate(jk_variance = map2_dbl(wgt_total, data, function(x, y) co * sum((y - x) ^ 2))) %>%
+   nest(new_col = -c(a_vari, wgt_total)) %>%
+   mutate(jk_variance = map2_dbl(wgt_total, new_col, function(x, y) co * sum((y - x) ^ 2))) %>%
    ungroup() %>%
    rename(!!rlang::sym(old_names[1]) := a_vari) %>%
    rename(est_proportion = wgt_total) %>%
