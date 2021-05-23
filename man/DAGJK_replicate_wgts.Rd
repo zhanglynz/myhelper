@@ -19,6 +19,3 @@ It returns DAGJK (Delete A Group Jackknife) replicate weights
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{DAGJK;}
-\keyword{replicate}
-\keyword{weights}

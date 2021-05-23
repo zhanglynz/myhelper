@@ -4,7 +4,6 @@
 #' @param a_pop a population
 #' @param relative_prob_wgt relative probability weights
 #' @param ssize sample size
-#' @keywords unequal selection probabilities
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples

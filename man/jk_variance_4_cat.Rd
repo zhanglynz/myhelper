@@ -17,7 +17,3 @@ It returns total of each category and corresponding variance if count is TRUE; o
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{Jackknife;}
-\keyword{deviation}
-\keyword{standard}
-\keyword{variance;}

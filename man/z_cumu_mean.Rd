@@ -20,4 +20,3 @@ x <- 1:10
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{mean}

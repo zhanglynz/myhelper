@@ -1,8 +1,8 @@
 #' cumulative standard deviation
 #'
 #' return cumulative standard deviation of a vector
-#' @param a_vector
-#' @keywords standard deviation
+#' @param a_vector A numeric vector
+#' @param divisor A character, defaut value is "n_minus_1"
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples

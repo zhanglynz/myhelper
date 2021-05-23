@@ -3,7 +3,6 @@
 #' It returns total of each category and corresponding variance if count is TRUE; otherwise returns proportion of each category and corresponding variance
 #' @param df a dataframe, which contains a categorical variable, final_wgt and replicate weights--must be in this order
 #' @param count a logical variable
-#' @keywords Jackknife; variance; standard deviation
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 
@@ -66,3 +65,5 @@ jk_variance_4_cat <- function(df, count = TRUE)
  return(temp_a)
 
 }
+
+

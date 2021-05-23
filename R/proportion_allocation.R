@@ -3,7 +3,6 @@
 #' This is to return proportionally allocated sample sizes
 #' @param n sample size
 #' @param a_vec a vector, which contains sizes of strata
-#' @keywords proportional allocation
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples

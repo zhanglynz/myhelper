@@ -2,7 +2,6 @@
 #'
 #' Return controlled rounding off numbers
 #' @param a_vector a vector of positive/negative numbers
-#' @keywords rounding off control
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples

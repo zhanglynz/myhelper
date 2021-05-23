@@ -3,7 +3,6 @@
 #' Return controlled rounding off numbers
 #' @param n the total
 #' @param a_vector a vector of non-negative numbers
-#' @keywords rounding off control
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples
@@ -19,11 +18,11 @@ controlled_rounding_off <- function(n = NULL, a_vector)
 
  a_df <-
    data.frame(x = a_vector) %>%
-   dplyr::mutate(ID = row_number()) %>%
+   dplyr::mutate(ID = dplyr::row_number()) %>%
    dplyr::mutate(y = trunc(x)) %>%
    dplyr::mutate(z = x - y) %>%
    dplyr::arrange(desc(z)) %>%
-   dplyr::mutate(new_ID = row_number())
+   dplyr::mutate(new_ID = dplyr::row_number())
 
  the_diff <- total - sum(a_df$y)
 

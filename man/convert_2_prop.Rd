@@ -19,5 +19,3 @@ p <- convert_2_prop(x)
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{counts;}
-\keyword{proportions}

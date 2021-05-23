@@ -23,5 +23,3 @@ a <- c(100, 200, 300, 200, 400, 500)
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{allocation}
-\keyword{proportional}

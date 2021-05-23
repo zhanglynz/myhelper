@@ -17,7 +17,8 @@ Return a dataframe where the the rows are non-unique in terms of a varialbe
 \examples{
 fk_data <-
 data.frame(x = c(rep("a", 2), rep("b", 3), rep("c", 5), letters[11:20]),
-y = rnorm(20))
+y = rnorm(20),
+stringAsFactor = FALSE)
 test_df <- get_non_unique_rows(a_df = fk_data, a_var = "x")
 
 }

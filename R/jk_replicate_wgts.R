@@ -4,7 +4,6 @@
 #' @param df a dataframe, which contains unit_ID, psu_code, stratum_code and selection_wgt--must be in this ordr
 #' @param  replicate_NO number of replicate weights
 #' @param  random_nbr_seed random number seed
-#' @keywords DAGJK; replicate weights
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 
@@ -37,7 +36,7 @@ DAGJK_replicate_wgts <- function(df, replicate_NO = 100, random_nbr_seed = 12345
  d <- length(psu_df$psu_code)
  rep_group_df <-
    psu_df %>%
-   dplyr::mutate(random_nbr = runif(d)) %>%
+   dplyr::mutate(random_nbr = stats::runif(d)) %>%
    dplyr::arrange(stratum_code, random_nbr) %>%
    dplyr::mutate(psu_order_nbr = dplyr::row_number()) %>%
    dplyr::mutate(rep_grp_nbr = psu_order_nbr %% replicate_NO) %>%
@@ -96,3 +95,15 @@ DAGJK_replicate_wgts <- function(df, replicate_NO = 100, random_nbr_seed = 12345
 
  return(result_df)
 }
+
+stratum_code <- NULL
+psu_code <- NULL
+n <- NULL
+random_nbr <- NULL
+psu_order_nbr <- NULL
+rep_grp_nbr <- NULL
+unit_ID <- NULL
+total_psus <- NULL
+selection_wgt <- NULL
+
+

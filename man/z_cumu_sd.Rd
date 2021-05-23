@@ -6,6 +6,11 @@
 \usage{
 z_cumu_sd(a_vector, divisor = "n_minus_1")
 }
+\arguments{
+\item{a_vector}{A numeric vector}
+
+\item{divisor}{A character, defaut value is "n_minus_1"}
+}
 \description{
 return cumulative standard deviation of a vector
 }
@@ -17,5 +22,3 @@ x <- 1:10
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{deviation}
-\keyword{standard}

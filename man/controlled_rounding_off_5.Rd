@@ -21,6 +21,3 @@ y <- controlled_rounding_off_5(a_vector = x)
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{control}
-\keyword{off}
-\keyword{rounding}

@@ -2,7 +2,6 @@
 #'
 #' return cumulative mean of a vector
 #' @param a_vector a vector of numbers
-#' @keywords mean
 #' @export
 #' @author Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 #' @examples

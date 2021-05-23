@@ -24,6 +24,3 @@ sample_uneq_prob(a_pop = popu, relative_prob_wgt = relative_prob, ssize = 2)
 \author{
 Lingyun (Larry) Zhang \email{lyzhang10@gmail.com}
 }
-\keyword{probabilities}
-\keyword{selection}
-\keyword{unequal}
