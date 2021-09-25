@@ -65,5 +65,6 @@ jk_variance_4_cat <- function(df, count = TRUE)
  return(temp_a)
 
 }
-
+a_vari <- wgt_total <- new_col <- jk_variance <- NULL
+est_count <- jk_sd <- est_proportion <- NULL
 

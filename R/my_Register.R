@@ -21,3 +21,4 @@ my_Register <- function(folder_name = "R")
 
  return(a_df)
 }
+file_name <- prefix <- group_letter <- NULL

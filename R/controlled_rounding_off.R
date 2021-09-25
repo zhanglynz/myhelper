@@ -34,3 +34,5 @@ controlled_rounding_off <- function(n = NULL, a_vector)
 
  return(b_df$result)
 }
+x <- y <- z <- new_ID <- one_or_zero <- NULL
+ID <- NULL

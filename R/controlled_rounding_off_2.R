@@ -26,3 +26,4 @@ controlled_rounding_off_2 <- function(a_vector)
 
  return(a_dt$the_re)
 }
+x <- y <- z <- id <- NULL

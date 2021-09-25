@@ -60,3 +60,4 @@ jk_variance_4_continuous <- function(df, total = TRUE)
  return(result_df_a)
 
 }
+a_vari <- jk_variance <- NULL
