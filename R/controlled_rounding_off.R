@@ -21,7 +21,7 @@ controlled_rounding_off <- function(n = NULL, a_vector)
    dplyr::mutate(ID = dplyr::row_number()) %>%
    dplyr::mutate(y = trunc(x)) %>%
    dplyr::mutate(z = x - y) %>%
-   dplyr::arrange(desc(z)) %>%
+   dplyr::arrange(dplyr::desc(z)) %>%
    dplyr::mutate(new_ID = dplyr::row_number())
 
  the_diff <- total - sum(a_df$y)
